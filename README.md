@@ -81,3 +81,28 @@ where:
 ### Perplexity
 
 Skipped the perplexity part and just went through the comparison done in the original tutorial.
+
+---
+
+## Tutorial 2
+
+### Activation Functions
+
+Implemented and plotted various common activation functions:
+
+* **Sigmoid**
+* **Tanh**
+* **ReLU**
+* **Leaky ReLU**
+* **Softmax**
+
+---
+
+### Loss Function and Gradients
+
+Implemented a basic loss function and calculated its gradient:
+
+* **Loss function**: \( y = x^2 \)
+* **Gradient**: \( \frac{dy}{dx} = 2x \)
+
+Also plotted the loss function to visualize it.
