@@ -418,4 +418,21 @@ In this tutorial, we construct a full Transformer encoder architecture from scra
   mask = torch.tril(torch.ones(seq_len, seq_len)).unsqueeze(0)
   scores = scores.masked_fill(mask == 0, -float("inf"))
   ```
+
+---
+
+## Tutorial 6: Fine-Tuning BERT for Sequence Classification
+
+In this tutorial, we fine-tune the pre-trained `bert-base-uncased` model for binary sentence classification using the [Tutorial 6 notebook](./tutorial6-dl4nlp.ipynb).
+
+### Topics Covered
+
+* Detecting and selecting a GPU when available.
+* Loading and preprocessing sentence data with pandas.
+* Tokenizing sentences with `BertTokenizer`.
+* Creating padded token IDs and attention masks.
+* Fine-tuning `BertForSequenceClassification` with a training and validation split.
+* Using an AdamW optimizer and a linear learning-rate scheduler.
+* Evaluating predictions on an out-of-domain test set.
+* Saving the fine-tuned model and tokenizer with `save_pretrained`.
 
